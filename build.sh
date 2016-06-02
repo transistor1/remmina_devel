@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd /root
+
 #3. Create a new directory for development in your home directory, and cd into it
 
 mkdir remmina_devel
