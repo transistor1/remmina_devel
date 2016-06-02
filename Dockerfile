@@ -40,4 +40,4 @@ RUN apt-get --purge remove -y \
   
 ADD build.sh /build.sh
 
-CMD ['bash']
+CMD [ "/bin/bash" ]
