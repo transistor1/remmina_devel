@@ -1,6 +1,6 @@
 # Repeatable build environment for building Remmina
 
-Based on Ubuntu 16.04 instructions (here)[https://github.com/FreeRDP/Remmina/wiki/Compile-on-Ubuntu-16.04]
+Based on Ubuntu 16.04 instructions [here](https://github.com/FreeRDP/Remmina/wiki/Compile-on-Ubuntu-16.04)
 
 ```
 
