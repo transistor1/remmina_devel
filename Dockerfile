@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM debian:jessie
 
 MAINTAINER Steve Russo <svrusso1@gmail.com>
 
@@ -17,7 +17,7 @@ RUN apt-fast install -y \
   libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libxi-dev libavutil-dev \
   libavcodec-dev libxtst-dev libgtk-3-dev libgcrypt11-dev libssh-dev libpulse-dev \
   libvte-2.91-dev libxkbfile-dev libfreerdp-dev libtelepathy-glib-dev libjpeg-dev \
-  libgnutls-dev libgnome-keyring-dev libavahi-ui-gtk3-dev libvncserver-dev \
+  libgnutls28-dev libgnome-keyring-dev libavahi-ui-gtk3-dev libvncserver-dev \
   libappindicator3-dev intltool libsecret-1-dev libwebkit2gtk-4.0-dev libsystemd-dev
   
 RUN apt-get --purge remove -y freerdp-x11 \
