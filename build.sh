@@ -8,8 +8,9 @@ mkdir remmina_devel
 cd remmina_devel
 
 #4. Download the latest source code of FreeRDP from its master branch
-
+git clone https://github.com/FreeRDP/Remmina.git -b next
 git clone https://github.com/FreeRDP/FreeRDP.git
+
 cd FreeRDP
 
 #5. Configure FreeRDP for compilation (don't forget to include -DWITH_PULSE=ON)
@@ -36,12 +37,9 @@ xfreerdp +clipboard /sound:rate:44100,channel:2 /v:hostname /u:username
 
 #10. Now clone remmina repository, "next" branch, to your devel dir:
 
-cd ..
-git clone https://github.com/FreeRDP/Remmina.git -b next
-
 #11. Configure Remmina for compilation
 
-cd Remmina
+cd ../Remmina
 cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX:PATH=/usr/local -DCMAKE_PREFIX_PATH=/usr/local --build=build .
 
 #12. Compile remmina and install it
